@@ -1,0 +1,164 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="web_project_v1.Main" %>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Colorlib">
+    <meta name="description" content="#">
+    <meta name="keywords" content="#">
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="#">
+    <!-- Page Title -->
+    <title>DOGHILLO</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/new-age.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/main.css" rel="stylesheet" />
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" />
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/new-age-other.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <!-- Simple line Icon -->
+    <link rel="stylesheet" href="css/simple-line-icons.css">
+    <!-- Themify Icon -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- Hover Effects -->
+    <link rel="stylesheet" href="css/set1.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <form id="main_form" runat="server">
+                <!-- Loading square for squar.red network -->
+                <!-- Navigation -->
+                <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav-2">
+                    <div class="container">
+                        <a class="navbar-brand js-scroll-trigger" href="index.aspx">DOGHILLO</a>
+                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                            Menu
+                <i class="fas fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarResponsive">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link js-scroll-trigger" href="frontoff_index.html">Conocenos</a>
+                                </li>
+                                <li class="nav-item" id="item_login" runat="server">
+                                    <a class="nav-link js-scroll-trigger" href="login.aspx" id="btn_login" runat="server">Iniciar sesion</a>
+                                </li>
+                                <li class="nav-item" id="item_logout" runat="server">
+                                    <div class="bg-transparent h-50 ">
+                                        <div class="dd-user dropdown nav-link">
+                                            <a class="dd-user js-scroll-trigger dropdown-toggle text-uppercase text-decoration-none" data-toggle="dropdown" href="#" id="btn_username" runat="server">username</a>
+                                            <span class="caret"></span>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <asp:LinkButton CssClass="dd-item nav-link js-scroll-trigger" runat="server" ID="view_profile" OnClick="view_profile_Click">Ver perfil</asp:LinkButton>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <asp:LinkButton CssClass="dd-item nav-link js-scroll-trigger" runat="server" ID="admin" OnClick="admin_Click" Visible="false">Panel de administración</asp:LinkButton>
+
+                                                </li>
+                                                <li class="">
+                                                    <asp:LinkButton CssClass="dd-item nav-link js-scroll-trigger" runat="server" ID="logout" OnClick="logout_Click">Cerrar sesion</asp:LinkButton>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </form>
+        </div>
+        <footer id="footer">
+            <div class="container">
+                <p>&copy; doguillo 2020. All Rights Reserved.</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="#">Privacy</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">Terms</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <!--//END FOOTER -->
+    <!-- jQuery, Bootstrap JS. -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Magnific popup JS -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- Swipper Slider JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/new-age.min.js"></script>
+    <script src="js/extention/choices.js"></script>
+
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+        function showModal() {
+            $(document).ready(function () {
+                $("#myModal").modal('show');
+            });
+        }
+    </script>
+    <script>
+        const choices = new Choices('[data-trigger]',
+            {
+                searchEnabled: false,
+                itemSelectText: '',
+            });
+
+    </script>
+    <!-- Map JS (Please change the API key below. Read documentation for more info) -->
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap&key=AIzaSyDMTUkJAmi1ahsx9uCGSgmcSmqDTBF9ygg"></script>
+
+</body>
+</html>
